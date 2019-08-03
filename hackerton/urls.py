@@ -20,4 +20,5 @@ from light import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('light/', views.index, name="index"),
+    path('light/oneselection/', views.oneselection, name="oneselection"),
 ]
