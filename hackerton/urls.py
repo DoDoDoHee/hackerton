@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from light import views
+import light.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('light/', views.index, name="index"),
-    path('light/oneselection/', views.oneselection, name="oneselection"),
+    # light앱관련 url
+    path('light/', light.views.index, name="index"),
+    path('light/oneselection/', light.views.oneselection, name="oneselection"),
+    path('light/twoselection/', light.views.twoselection, name="twoselection"),
+    path('light/threeselection/', light.views.threeselection, name="threeselection"),
+    # path('light/<int:light_id>', lv.detail, name="detail")
 ]
