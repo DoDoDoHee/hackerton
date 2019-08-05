@@ -19,6 +19,7 @@ import light.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('mypage/', light.views.mypage, name="mypage"),
     # light앱관련 url
     path('light/', light.views.index, name="index"),
     path('light/oneselection/', light.views.oneselection, name="oneselection"),
