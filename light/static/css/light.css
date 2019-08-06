@@ -4,12 +4,38 @@
   font-weight: normal; 
   font-style: normal; 
 }
-/* @font-face {
-    font-family: 'Jalnan';
-    src: url('../fonts/Jalnan.ttf');
-    src: local('../fonts/Jalnan.ttf');
-  } */
 
+/* light_main.html */
   .card-deck {
     font-family: yg-jalnan;
   }
+
+/* one_selection.html */
+  .box1 {
+    width: 930px;
+    height: 200px;
+    background-color: #eeeadc;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffc107;
+    margin-bottom: 16px;
+    padding: 17px;
+    border-radius: 10px;
+  }
+
+/* mypage */
+.upper {
+  background-color: rgb(7, 1, 75);
+  align-items: center;
+  text-decoration-color: white;
+  box-shadow: small;
+  border-radius: 10px;
+}
+
+.person {
+  margin-right: 1rem;
+}
+
+main {
+  background-color: #eeeadc;
+}
