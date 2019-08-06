@@ -1,4 +1,5 @@
 {% load staticfiles %}
+<link href="{% static 'fonts/KoPubBatangBold.ttf'%}" rel="stylesheet" media="screen">
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,6 +10,7 @@
     <title>구독선택페이지</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/light.css'%}">
     <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="form-validation.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,12 +21,12 @@
 <body>
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="{%static 'planet.png'%}" alt="" width="72" height="72">
-            <h2>구독 신청하기</h2>
-            <p class="lead">구독 신청 페이지입니다.</p>
+            <img class="d-block mx-auto mb-4" src="{%static 'img/planet.png'%}" alt="" width="72" height="72">
+            <h2 style="font-family: Jalnan">구독 신청하기</h2>
+            <p class="lead" style="font-family: Jalnan">구독 신청 페이지입니다.</p>
         </div>
         <div class="row1">
-            <h2>1. 패키지 목록 체크박스</h2>
+            <h2 style="font-family: Jalnan">1. 패키지 목록 체크박스</h2>
             <h6>목록 중에서 꼭 하고 싶은 것을 체크해주세요.(최대4개)</h6>
             <div class="check">
                 <div class="form-check form-check-inline">
@@ -56,7 +58,7 @@
         </div>
         <hr>
         <div class="row2">
-            <h2>2. 기간을 선택하세요</h2>
+            <h2 style="font-family: Jalnan">2. 기간을 선택하세요</h2>
             <select class="custom-select custom-select-lg mb-3">
                 <option selected>기간을 선택하세요</option>
                 <option value="1">한달</option>
@@ -64,6 +66,6 @@
                 <option value="3">세달</option>
             </select>
         </div>
-        <button class="btn btn-warning btn-lg btn-block" type="submit">구독 신청하기</button>
+        <button class="btn btn-warning btn-lg btn-block" type="submit" style="font-family: Jalnan">구독 신청하기</button>
     </div>
 </body></html>

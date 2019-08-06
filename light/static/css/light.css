@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Jalnan';
+    src: url('{% static "fonts/Jalnan.ttf" %}');
+    src: local('{% static "fonts/Jalnan.ttf" %}');
+  }
+
+  .card-deck {
+    font-family: Jalnan;
+  }

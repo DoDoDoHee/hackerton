@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'KoPubBatangBold';
+    src: url('{% static "fonts/KoPubBatangBold.ttf" %}');
+    src: local('{% static "fonts/KoPubBatangBold.ttf" %}');
+  }
+
