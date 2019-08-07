@@ -1,6 +1,41 @@
-@font-face {
-    font-family: 'KoPubBatangBold';
-    src: url('{% static "fonts/KoPubBatangBold.ttf" %}');
-    src: local('{% static "fonts/KoPubBatangBold.ttf" %}');
+@font-face { 
+  font-family: 'yg-jalnan'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+/* light_main.html */
+  .card-deck {
+    font-family: 'yg-jalnan';
   }
 
+/* one_selection.html */
+  .box1 {
+    width: 930px;
+    height: 200px;
+    background-color: #eeeadc;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffc107;
+    margin-bottom: 16px;
+    padding: 17px;
+    border-radius: 10px;
+  }
+
+/* mypage */
+.upper {
+  background-color: rgb(7, 1, 75);
+  align-items: center;
+  text-decoration-color: white;
+  box-shadow: small;
+  border-radius: 10px;
+}
+
+.person {
+  margin-right: 1rem;
+}
+
+main {
+  background-color: #eeeadc;
+}
