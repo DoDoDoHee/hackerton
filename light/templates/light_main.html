@@ -19,6 +19,8 @@
           text-align: center;
           font-size:30px;
           padding-top: 100px;
+          background-image: url('../../static/img/twinkle.png');
+          background-position: center;
         }
         
         h2 {
@@ -53,7 +55,12 @@
           padding-right: 10px;
           margin: 5px auto;
         }
-
+        .small_logo {
+          display: inlne-block;
+         margin-left: 50px;
+         margin-right: 10px;
+         float: left;
+        }
       </style>
   </head>
   <body>
@@ -84,14 +91,15 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-      <div class="subscribe_up d-block w-100">구독권을 선택하세요 </div>
+      <div class="subscribe_up d-block w-100">구독권을 선택하세요</div>
     <br>
     <!-- 금액선택 -->
     <div class="card-deck mb-3 text-center">
       <!-- 2만원선택 -->
       <div class="card mb-4 border-light">
         <div class="card-header border-light">
-          <h2 class="my-0 font-weight-normal">지구행</h2>
+          <img src="{%static 'img/earth.png'%}" class="small_logo d-block w-30" alt="...">
+          <h2 class="my-0 font-weight-normal float-left">지구행</h2>
         </div>
         <div class="card-body">
           <div class="card_background">
@@ -108,7 +116,8 @@
       <!-- 3만원선택 -->
       <div class="card mb-4 border-light">
         <div class="card-header border-light">
-          <h2 class="my-0 font-weight-normal">금성행</h2>
+          <img src="{%static 'img/venus.png'%}" class="small_logo d-block w-30" alt="...">
+          <h2 class="my-0 font-weight-normal float-left">금성행</h2>
         </div>
         <div class="card-body">
           <div class="card_background">
@@ -125,7 +134,8 @@
       <!-- 4만원선택 -->
       <div class="card mb-4 border-light">
         <div class="card-header border-light">
-          <h2 class="my-0 font-weight-normal">수성행</h2>
+          <img src="{%static 'img/mercury.png'%}" class="small_logo d-block w-30" alt="...">
+          <h2 class="my-0 font-weight-normal float-left">수성행</h2>
         </div>
         <div class="card-body">
           <div class="card_background">
