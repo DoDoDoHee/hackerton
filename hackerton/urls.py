@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import light.views
+import heavy.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,7 @@ urlpatterns = [
     path('light/twoselection/', light.views.twoselection, name="twoselection"),
     path('light/threeselection/', light.views.threeselection, name="threeselection"),
     # path('light/<int:light_id>', lv.detail, name="detail")
+    path('heavy/', heavy.views.heavymain , name="heavymain"),
+    path('heavydetail/', heavy.views.heavydetail , name="heavydetail"),
+    path('heavyfirst/', heavy.views.heavyfirst , name="heavyfirst"),
 ]
