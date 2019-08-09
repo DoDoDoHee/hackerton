@@ -24,18 +24,3 @@
   }
 
 /* mypage */
-.upper {
-  background-color: rgb(7, 1, 75);
-  align-items: center;
-  text-decoration-color: white;
-  box-shadow: small;
-  border-radius: 10px;
-}
-
-.person {
-  margin-right: 1rem;
-}
-
-main {
-  background-color: #eeeadc;
-}

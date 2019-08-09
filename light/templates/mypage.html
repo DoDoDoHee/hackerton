@@ -224,6 +224,7 @@
         -o-transform: rotateY(180deg);
         transform: rotateY(180deg);
       }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -237,6 +238,22 @@
             .bd-placeholder-img-lg {
             font-size: 3.5rem;
             }
+        }
+
+        main {
+          background-color: white;
+          padding: 5px;
+        }
+
+        .upper {
+          width: 1111px;
+          height: 165px;
+          margin: 0px auto;
+          background-image: url('../../static/img/mypage_upper2.png');
+        }
+
+        .person {
+          margin-top: 90px;
         }
     </style>
 </head>
@@ -282,65 +299,60 @@
            
         </ul>
     </div>
-    <br><br><br><br>
-    <!-- 네브바밑부분 -->
-    <main role="main" class="container">
-        <div class="upper d-flex p-3 my-3 text-white-50">
-            <img class="person" src="{%static 'img/white_logo.png'%}" alt="..." width="48" height="48">
-            <div class="lh-100">
+    <br>
+<!-- 네브바밑부분 -->
+        <div class="upper p-3 my-3 text-white-50">
+            <div class="person lh-100">
                 <h6 class="mb-0 text-white lh-100">소확행님</h6>
                 <small>당신의 등급은 "우주비행사"입니다.</small>
             </div>
         </div>
-<!-- 찜한 상품 -->
-        <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h3 class="border-bottom border-gray pb-2 mb-0" style="font-family: yg-jalnan">찜한 상품</h3>
-            <div class="media text-muted pt-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#fdff71"></rect></svg>
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">네온사인만들기 패키지</strong>
-                </p>
+  <main role="main" class="container">
+    <!-- 찜한 상품 -->
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h3 class="border-bottom border-gray pb-2 mb-0" style="font-family: yg-jalnan; color: #232c46;">찜한 상품</h3>
+        <div class="media text-muted pt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             </div>
-            <div class="media text-muted pt-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="rgb(3, 3, 70)"></rect></svg>
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">가죽공예 패키지</strong>
-                </p>
-            </div>
-            <div class="media text-muted pt-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect></svg>
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">수세미 뜨개질 패키지</strong>
-                </p>
-            </div>
-            <br>
-            <button><a href="#">삭제하기</a></button>
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">네온사인만들기 패키지</strong>
+            </p>
         </div>
-<!-- 배송조회 -->
-<div class="my-3 p-3 bg-white rounded shadow-sm">
-        <h3 class="border-bottom border-gray pb-2 mb-0" style="font-family: yg-jalnan">배송 조회</h3>
+        <div class="media text-muted pt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            </div>
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">가죽공예 패키지</strong>
+            </p>
+        </div>
+        <div class="media text-muted pt-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            </div>
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">수세미 뜨개질 패키지</strong>
+            </p>
+        </div>
+        <!-- <button><a href="#">삭제하기</a></button> -->
+    </div>
+    <!-- 구매한 목록 -->
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h3 class="border-bottom border-gray pb-2 mb-0" style="font-family: yg-jalnan; color:#232c46;">구매한 목록</h3>
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="red"></rect></svg>
             <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark"><span style="color:red;">배송중</span> 네온사인만들기 패키지</strong>
+                <strong class="d-block text-gray-dark">네온사인만들기 패키지</strong>
             </p>
         </div>
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="rgb(3, 3, 70)"></rect></svg>
             <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark"><span style="color:green;">배송완료</span> 가죽공예 패키지</strong>
+                <strong class="d-block text-gray-dark">가죽공예 패키지</strong>
             </p>
         </div>
         <br>
     </div>
-    </main>
+  </main>
 </body></html>

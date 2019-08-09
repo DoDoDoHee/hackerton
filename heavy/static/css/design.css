@@ -126,9 +126,8 @@ height:20%;
   background-color:#eb65c1;
 }
 
-
 .menu {
-  opacity: 0;
+  opacity: 0.5;
   position: fixed;
   height: 50px;
   background: #23043A;

@@ -1,6 +1,5 @@
 {% load staticfiles %}
 <html lang="en">
-<div class="container">
   <head>
       <link rel="stylesheet" type="text/css" href="{%static 'css/light.css'%}">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -263,9 +262,18 @@
         }
         .small_logo {
           display: inlne-block;
-         margin-left: 50px;
+         margin-left: 150px;
          margin-right: 10px;
          float: left;
+        }
+
+        .tales {
+          width:100%;
+        }
+
+        .carousel-inner {
+          width: 100%;
+          max-height: 528px !important;
         }
       </style>
   </head>
@@ -311,7 +319,7 @@
            
         </ul>
     </div>
-    <br><br><br><br>
+    <br>
     <!-- 유동바 -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -321,13 +329,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{%static 'img/flow_1.png'%}" class="d-block w-100" alt="...">
+          <img src="{%static 'img/newflow_1.png'%}" class="d-block w-100 tales" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{%static 'img/flow_2.png'%}" class="d-block w-100" alt="...">
+          <img src="{%static 'img/newflow_2.png'%}" class="d-block w-100 tales" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{%static 'img/flow_3.png'%}" class="d-block w-100" alt="...">
+          <img src="{%static 'img/newflow_3.png'%}" class="d-block w-100 tales" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -342,7 +350,7 @@
       <div class="subscribe_up d-block w-100">구독권을 선택하세요</div>
     <br>
     <!-- 금액선택 -->
-    <div class="card-deck mb-3 text-center">
+    <div class="card-deck mb-3" style="text-align: center;">
       <!-- 2만원선택 -->
       <div class="card mb-4 border-light">
         <div class="card-header border-light">
@@ -399,4 +407,4 @@
       </div>
     </div>
   </body>
-</div></html>
+</html>

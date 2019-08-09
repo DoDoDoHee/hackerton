@@ -24,19 +24,3 @@
   }
 
 /* mypage */
-.upper {
-  background-color: #232c46;
-  align-items: center;
-  text-decoration-color: white;
-  box-shadow: small;
-  border-radius: 10px;
-}
-
-.person {
-  margin-right: 1rem;
-}
-
-main {
-  background-color: #eb65c1;
-  padding: 5px;
-}
