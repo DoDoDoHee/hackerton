@@ -26,6 +26,7 @@ urlpatterns = [
     path('light/oneselection/', light.views.oneselection, name="oneselection"),
     path('light/twoselection/', light.views.twoselection, name="twoselection"),
     path('light/threeselection/', light.views.threeselection, name="threeselection"),
+    path('light/buy/', light.views.buy, name="buy"),
     # path('light/<int:light_id>', lv.detail, name="detail")
     path('heavy/', heavy.views.heavymain , name="heavymain"),
     path('heavydetail/', heavy.views.heavydetail , name="heavydetail"),

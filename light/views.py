@@ -15,6 +15,10 @@ def threeselection(request):
 def mypage(request):
     return render(request, 'mypage.html')
 
+def buy(request):
+    return render(request, 'buy.html')
+
+
 # def detail(request, light_id):
 #     light_detail = get_object_or_404(Light, pk=light_id)
 #     return render(request, 'detail.html', {'light':light_detail})
